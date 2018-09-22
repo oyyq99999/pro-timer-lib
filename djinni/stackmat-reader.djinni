@@ -1,0 +1,15 @@
+stackmat_status = enum {
+  ON;
+  GREEN_LIGHT;
+  LEFT_HAND;
+  RIGHT_HAND;
+  RUNNING;
+  TIME_UPDATED;
+}
+
+stackmat_reader = interface +c {
+  static instance(sample_rate: f32): stackmat_reader;
+  proc_signal(signals: list<f32>, length: i32): i32;
+  get_time(): i32;
+  get_status(): i32;
+}
