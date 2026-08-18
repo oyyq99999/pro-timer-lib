@@ -3,4 +3,4 @@
 	url = https://github.com/dropbox/djinni.git
 [submodule "lib/stackmat-reader"]
 	path = lib/stackmat-reader
-	url = https://gitlab.com/oyyq99999/stackmat-reader.git
+	url = https://github.com/oyyq99999/stackmat-reader.git
